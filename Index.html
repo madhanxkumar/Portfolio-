@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K. Madhankumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fc;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0077b5,#005582);
+color:white;
+padding:60px 10%;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+}
+
+.hero img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.hero-text h1{
+font-size:3rem;
+}
+
+.hero-text h3{
+margin-top:10px;
+font-weight:400;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin-top:20px;
+margin-right:10px;
+background:white;
+color:#0077b5;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:30px;
+color:#0077b5;
+}
+
+.about{
+background:white;
+border-radius:15px;
+padding:30px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.timeline-item{
+background:white;
+padding:20px;
+border-left:5px solid #0077b5;
+border-radius:10px;
+}
+
+.achievement-list li{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.contact{
+background:#0077b5;
+color:white;
+border-radius:15px;
+padding:30px;
+}
+
+.comment-box{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#0077b5;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+@media(max-width:768px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+.hero-text h1{
+font-size:2rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<img src="profile.jpg" alt="Madhankumar">
+
+<div class="hero-text">
+<h1>K. Madhankumar</h1>
+<h3>B.Tech Information Technology | Hindusthan College of Engineering and Technology</h3>
+
+<a href="https://www.linkedin.com/in/madhankumar-k-195b91414" class="btn">LinkedIn</a>
+
+<a href="https://github.com/madhanxkumar" class="btn">GitHub</a>
+
+<p style="margin-top:20px;">
+📧 kmadhankumarvi8@gmail.com<br>
+📱 9345569623
+</p>
+</div>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+Passionate Information Technology student with strong interests in Data Analytics,
+Web Development, IoT, Software Engineering and Problem Solving. Experienced in
+Python, Java, SQL, DBMS, Operating Systems, Computer Networks and IoT development.
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">Java</div>
+<div class="skill-card">C Programming</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">Data Analytics</div>
+<div class="skill-card">DBMS</div>
+<div class="skill-card">Operating Systems</div>
+<div class="skill-card">Computer Networks</div>
+<div class="skill-card">IoT & ESP8266</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Smart Parking System</h3>
+<p>IoT based parking management system using ESP8266 and sensors.</p>
+</div>
+
+<div class="project">
+<h3>Smart Shopping Cart</h3>
+<p>Automated shopping cart concept with smart product tracking.</p>
+</div>
+
+<div class="project">
+<h3>Arogya Mitra</h3>
+<p>Digital Health Passport solution for migrant workers.</p>
+</div>
+
+<div class="project">
+<h3>Data Analytics Projects</h3>
+<p>SQL, data cleaning and visualization projects.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Internships</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Cognifyz Technologies</h3>
+<p>Data Analytics Intern - 30 Days</p>
+</div>
+
+<div class="timeline-item">
+<h3>Elewayte</h3>
+<p>Business Analyst Intern - 21 Days</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Certifications</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+Infosys Springboard - Python Foundation Certification
+</div>
+
+<div class="timeline-item">
+Cognifyz Internship Completion Certificate
+</div>
+
+<div class="timeline-item">
+Elewayte Internship Completion Certificate
+</div>
+
+<div class="timeline-item">
+Hackathon & Paper Presentation Participation Certificates
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Achievements</h2>
+
+<ul class="achievement-list">
+<li>🏆 Hackathon 2nd Prize Winner</li>
+<li>🥋 State Level Karate 2nd Place</li>
+<li>🏃 District Level 3000m Running 2nd Place</li>
+<li>📄 5+ Paper Presentation Competitions</li>
+<li>💻 3+ Hackathons Participated</li>
+<li>🎓 5+ Workshops Participated</li>
+</ul>
+</section>
+
+<section>
+<h2 class="section-title">Comments & Likes</h2>
+
+<div class="comment-box">
+
+<h3>👍 Likes: <span id="likes">0</span></h3>
+
+<button onclick="likePortfolio()">Like Portfolio</button>
+
+<br><br>
+
+<input type="text" id="name" placeholder="Your Name">
+
+<textarea id="comment" rows="5" placeholder="Write Comment"></textarea>
+
+<button onclick="addComment()">Submit</button>
+
+<div id="comments"></div>
+
+</div>
+</section>
+
+<section>
+<div class="contact">
+<h2>Contact Me</h2>
+
+<p>Email: kmadhankumarvi8@gmail.com</p>
+<p>Phone: 9345569623</p>
+<p>Location: Coimbatore, Tamil Nadu</p>
+</div>
+</section>
+
+<footer>
+© 2026 K. Madhankumar | Portfolio Website
+</footer>
+
+<script>
+
+let likes=localStorage.getItem('likes') || 0;
+document.getElementById('likes').innerText=likes;
+
+function likePortfolio(){
+likes++;
+localStorage.setItem('likes',likes);
+document.getElementById('likes').innerText=likes;
+}
+
+function addComment(){
+
+let name=document.getElementById('name').value;
+let comment=document.getElementById('comment').value;
+
+if(name==='' || comment==='') return;
+
+let div=document.createElement('div');
+
+div.innerHTML="<b>"+name+"</b><p>"+comment+"</p><hr>";
+
+document.getElementById('comments').appendChild(div);
+
+document.getElementById('name').value='';
+document.getElementById('comment').value='';
+}
+</script>
+
+</body>
+  </html>
